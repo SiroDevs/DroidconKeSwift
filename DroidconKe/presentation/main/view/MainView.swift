@@ -8,40 +8,30 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject private var viewModel: MainViewModel
+    @StateObject private var viewModel: MainViewModel = {
+        DiContainer.shared.resolve(MainViewModel.self)
+    }()
     @State private var selectedTab: Tabbed = .home
-    private let prefsRepo: PrefsRepoProtocol
-    
     @State private var showOnboarding = false
-    
-    init() {
-        let container = DiContainer.shared
-        let prefsRepo = container.resolve(PrefsRepo.self)
-        
-        self.prefsRepo = prefsRepo
-        _viewModel = StateObject(wrappedValue: container.resolve(MainViewModel.self))
-        _showOnboarding = State(initialValue: !prefsRepo.isConFilterSet)
-    }
     
     var body: some View {
         stateContent
             .edgesIgnoringSafeArea(.bottom)
-            .task {
-                if prefsRepo.isConFilterSet {
-                    await viewModel.syncData()
+            .task { await viewModel.syncData() }
+            .onAppear {
+                if !viewModel.isConFilterSet {
+                    showOnboarding = true
                 }
             }
             .sheet(isPresented: $showOnboarding) {
                 OnboardingView(viewModel: viewModel) {
                     Task {
-                        await viewModel.syncData()
                         showOnboarding = false
+                        viewModel.updateConFilterSet()
+                        await viewModel.syncData()
                     }
                 }
                 .interactiveDismissDisabled()
-            }
-            .onChange(of: viewModel.isConFilterSet) { oldValue, newValue in
-                showOnboarding = !newValue
         }
     }
     

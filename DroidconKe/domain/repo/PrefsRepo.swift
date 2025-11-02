@@ -27,12 +27,7 @@ class PrefsRepo: PrefsRepoProtocol {
     
     var conFilter: ConFilter {
         get { ConFilter(rawValue: userDefaults.string(forKey: PrefConstants.conFilter) ?? PrefConstants.defaultConFilter) ?? .droidcon }
-        set { userDefaults.set(newValue, forKey: PrefConstants.conFilter) }
-    }
-    
-    func setConFilter(_ filter: ConFilter) {
-        userDefaults.set(filter.rawValue, forKey: PrefConstants.conFilter)
-        userDefaults.set(true, forKey: PrefConstants.conFilterSet)
+        set { userDefaults.set(newValue.rawValue, forKey: PrefConstants.conFilter) }
     }
     
     func resetPrefs() {

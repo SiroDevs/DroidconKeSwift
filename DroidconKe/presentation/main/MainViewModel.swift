@@ -46,17 +46,20 @@ final class MainViewModel: ObservableObject {
     }
 
     func syncData() async {
-        Task { @MainActor in
-            let isOnline = await netUtils.checkNetworkAvailability()
-            if isOnline {
-                await fetchRemoteData()
-            } else {
-                await fetchLocalData()
+        if isConFilterSet {
+            Task { @MainActor in
+                let isOnline = await netUtils.checkNetworkAvailability()
+                if isOnline {
+                    await fetchRemoteData()
+                } else {
+                    await fetchLocalData()
+                }
             }
         }
     }
     
     func updateConFilterSet() {
+        isConFilterSet = true
         Task {
             await MainActor.run { self.prefsRepo.isConFilterSet = true }
         }
