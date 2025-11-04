@@ -6,7 +6,7 @@
 //
 
 protocol SponsorRepoProtocol {
-    func fetchRemoteData(conType: ConFilter) async throws -> [SponsorEntity]
+    func fetchRemoteData(conFilter: ConFilter) async throws -> [SponsorEntity]
     func fetchLocalData() async throws -> [SponsorEntity]
     func saveData(_ sponsors: [SponsorEntity])
     func clearAllData()
@@ -24,8 +24,8 @@ class SponsorRepo: SponsorRepoProtocol {
         self.sponsorDm = sponsorDm
     }
     
-    func fetchRemoteData(conType: ConFilter) async throws -> [SponsorEntity] {
-        switch conType {
+    func fetchRemoteData(conFilter: ConFilter) async throws -> [SponsorEntity] {
+        switch conFilter {
             case .all:
                 async let droidconTask = fetchDroidconSponsors()
                 async let flutterconTask = fetchFlutterconSponsors()

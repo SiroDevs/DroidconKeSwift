@@ -9,10 +9,10 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject private var viewModel: MainViewModel
-    @State private var selectedTab: Tabbed
+    @State private var selectedTab: Tabbed = .home
     private let prefsRepo: PrefsRepoProtocol
     
-    @State private var showingSettingsSheet = false
+    @State private var showOnboarding = false
     
     init() {
         let container = DiContainer.shared
@@ -20,22 +20,29 @@ struct MainView: View {
         
         self.prefsRepo = prefsRepo
         _viewModel = StateObject(wrappedValue: container.resolve(MainViewModel.self))
-        _selectedTab = State(initialValue: prefsRepo.conTypeSet ? .home : .settings)
-        _showingSettingsSheet = State(initialValue: !prefsRepo.conTypeSet)
+        _showOnboarding = State(initialValue: !prefsRepo.isConFilterSet)
     }
-
+    
     var body: some View {
         stateContent
             .edgesIgnoringSafeArea(.bottom)
             .task {
-                if prefsRepo.conTypeSet {
+                if prefsRepo.isConFilterSet {
                     await viewModel.syncData()
                 }
             }
-            .sheet(isPresented: $showingSettingsSheet) {
-                SettingsTab(viewModel: viewModel, isPresentedAsSheet: true)
-                    .interactiveDismissDisabled(!prefsRepo.conTypeSet)
+            .sheet(isPresented: $showOnboarding) {
+                OnboardingView(viewModel: viewModel) {
+                    Task {
+                        await viewModel.syncData()
+                        showOnboarding = false
+                    }
+                }
+                .interactiveDismissDisabled()
             }
+            .onChange(of: viewModel.isConFilterSet) { oldValue, newValue in
+                showOnboarding = !newValue
+        }
     }
     
     @ViewBuilder
@@ -47,9 +54,7 @@ struct MainView: View {
             case .error(let msg):
                 ErrorState(message: msg) {
                     Task {
-                        if prefsRepo.conTypeSet {
-                            await viewModel.syncData()
-                        }
+                        await viewModel.syncData()
                     }
                 }
                 
@@ -83,7 +88,7 @@ struct MainView: View {
                         }
                         .tag(Tabbed.about)
                     
-                    SettingsTab(viewModel: viewModel, isPresentedAsSheet: false)
+                    SettingsTab(viewModel: viewModel)
                         .tabItem {
                             Image(systemName: "gear")
                             Text("Settings")

@@ -16,9 +16,9 @@ struct AppConstants {
 }
 
 struct PrefConstants {
-    static let defaultConType = "droidcon"
-    static let conTypeSet = "conTypeSetKey"
-    static let conType = "conTypeKey"
+    static let defaultConFilter = "droidcon"
+    static let conFilterSet = "conFilterKey"
+    static let conFilter = "conFilterKey"
 }
 
 struct AppSecrets {

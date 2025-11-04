@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SessionRepoProtocol {
-    func fetchRemoteData(conType: ConFilter) async throws -> [SessionEntity]
+    func fetchRemoteData(conFilter: ConFilter) async throws -> [SessionEntity]
     func fetchLocalData() -> [SessionEntity]
 //    func fetchLocalDataBySpeaker() -> [SessionEntity]
     func saveData(_ sessions: [SessionEntity])
@@ -27,8 +27,8 @@ class SessionRepo: SessionRepoProtocol {
         self.sessionDm = sessionDm
     }
     
-    func fetchRemoteData(conType: ConFilter) async throws -> [SessionEntity] {
-        switch conType {
+    func fetchRemoteData(conFilter: ConFilter) async throws -> [SessionEntity] {
+        switch conFilter {
             case .all:
                 async let droidconTask = fetchDroidconSessions()
                 async let flutterconTask = fetchFlutterconSessions()

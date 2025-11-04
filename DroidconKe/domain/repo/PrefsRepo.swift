@@ -8,10 +8,8 @@
 import Foundation
 
 protocol PrefsRepoProtocol {
-    var conTypeSet: Bool { get set }
-    var conType: String { get set }
+    var isConFilterSet: Bool { get set }
     var conFilter: ConFilter { get set }
-    
     func resetPrefs()
 }
 
@@ -22,29 +20,23 @@ class PrefsRepo: PrefsRepoProtocol {
         self.userDefaults = userDefaults
     }
     
-    var conTypeSet: Bool {
-        get { userDefaults.bool(forKey: PrefConstants.conTypeSet) }
-        set { userDefaults.set(newValue, forKey: PrefConstants.conTypeSet) }
-    }
-    
-    var conType: String {
-        get { userDefaults.string(forKey: PrefConstants.conType) ?? PrefConstants.defaultConType }
-        set { userDefaults.set(newValue, forKey: PrefConstants.conType) }
+    var isConFilterSet: Bool {
+        get { userDefaults.bool(forKey: PrefConstants.conFilterSet) }
+        set { userDefaults.set(newValue, forKey: PrefConstants.conFilterSet) }
     }
     
     var conFilter: ConFilter {
-        get {
-            let rawValue = userDefaults.string(forKey: PrefConstants.conType) ?? PrefConstants.defaultConType
-            return ConFilter(rawValue: rawValue) ?? .all
-        }
-        set {
-            userDefaults.set(newValue.rawValue, forKey: PrefConstants.conType)
-            conTypeSet = true
-        }
+        get { ConFilter(rawValue: userDefaults.string(forKey: PrefConstants.conFilter) ?? PrefConstants.defaultConFilter) ?? .droidcon }
+        set { userDefaults.set(newValue, forKey: PrefConstants.conFilter) }
+    }
+    
+    func setConFilter(_ filter: ConFilter) {
+        userDefaults.set(filter.rawValue, forKey: PrefConstants.conFilter)
+        userDefaults.set(true, forKey: PrefConstants.conFilterSet)
     }
     
     func resetPrefs() {
-        conType = PrefConstants.defaultConType
-        conTypeSet = false
+        userDefaults.removeObject(forKey: PrefConstants.conFilter)
+        userDefaults.removeObject(forKey: PrefConstants.conFilterSet)
     }
 }
