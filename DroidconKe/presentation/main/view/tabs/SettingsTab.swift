@@ -11,49 +11,44 @@ struct SettingsTab: View {
     @ObservedObject var viewModel: MainViewModel
     @EnvironmentObject var themeManager: ThemeManager
     @State private var conType: ConFilter = .all
-    @Environment(\.dismiss) private var dismiss
-    let isPresentedAsSheet: Bool
     
     var body: some View {
         NavigationStack {
             Form {
-                SettingsSection(header: "Select Session Types") {
-                    ForEach(ConFilter.allCases) { filter in
-                        SettingsRow(
-                            title: filter.rawValue,
-                            foregroundColor: .primary
-                        ) {
-                            viewModel.updateConFilter(filter)
-                        } trailing: {
-                            if viewModel.conType == filter {
-                                Image(systemName: "checkmark")
-                                    .foregroundColor(.blue)
-                            }
-                        }
-                    }
-                }
-
-                SettingsSection(header: "Select an App Theme") {
-                    Picker("Choose Theme", selection: $themeManager.selectedTheme) {
-                        ForEach(AppThemeMode.allCases) { mode in
-                            Text(mode.displayName).tag(mode)
-                        }
-                    }
-                    .pickerStyle(.inline)
-                }
+                sessionSection
+                themeSection
             }
             .background(Color(.surfaceTint))
             .navigationTitle("Settings")
-            .toolbarBackground(.regularMaterial, for: .navigationBar)
-            .toolbar {
-                if isPresentedAsSheet {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button("Done") {
-                            dismiss()
-                        }
+        }
+    }
+    
+    private var sessionSection: some View {
+        SettingsSection(header: "Select Session Types") {
+            ForEach(ConFilter.allCases) { filter in
+                SettingsRow(
+                    title: filter.rawValue,
+                    foregroundColor: .primary
+                ) {
+                    viewModel.updateConFilter(filter)
+                } trailing: {
+                    if viewModel.conFilter == filter {
+                        Image(systemName: "checkmark")
+                            .foregroundColor(.blue)
                     }
                 }
             }
+        }
+    }
+    
+    private var themeSection: some View {
+        SettingsSection(header: "Select an App Theme") {
+            Picker("Choose Theme", selection: $themeManager.selectedTheme) {
+                ForEach(AppThemeMode.allCases) { mode in
+                    Text(mode.displayName).tag(mode)
+                }
+            }
+            .pickerStyle(.inline)
         }
     }
 }

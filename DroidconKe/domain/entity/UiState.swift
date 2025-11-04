@@ -15,3 +15,11 @@ enum UiState: Equatable {
     case liked
     case error(String)
 }
+
+enum ConFilter: String, CaseIterable, Identifiable {
+    case all = "All Sessions"
+    case droidcon = "Droidcon Sessions"
+    case fluttercon = "FlutterCon Sessions"
+    
+    var id: String { rawValue }
+}

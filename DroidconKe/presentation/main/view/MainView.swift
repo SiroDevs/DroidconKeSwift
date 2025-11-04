@@ -8,34 +8,31 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject private var viewModel: MainViewModel
-    @State private var selectedTab: Tabbed
-    private let prefsRepo: PrefsRepoProtocol
+    @StateObject private var viewModel: MainViewModel = {
+        DiContainer.shared.resolve(MainViewModel.self)
+    }()
+    @State private var selectedTab: Tabbed = .home
+    @State private var showOnboarding = false
     
-    @State private var showingSettingsSheet = false
-    
-    init() {
-        let container = DiContainer.shared
-        let prefsRepo = container.resolve(PrefsRepo.self)
-        
-        self.prefsRepo = prefsRepo
-        _viewModel = StateObject(wrappedValue: container.resolve(MainViewModel.self))
-        _selectedTab = State(initialValue: prefsRepo.conTypeSet ? .home : .settings)
-        _showingSettingsSheet = State(initialValue: !prefsRepo.conTypeSet)
-    }
-
     var body: some View {
         stateContent
             .edgesIgnoringSafeArea(.bottom)
-            .task {
-                if prefsRepo.conTypeSet {
-                    await viewModel.syncData()
+            .task { await viewModel.syncData() }
+            .onAppear {
+                if !viewModel.isConFilterSet {
+                    showOnboarding = true
                 }
             }
-            .sheet(isPresented: $showingSettingsSheet) {
-                SettingsTab(viewModel: viewModel, isPresentedAsSheet: true)
-                    .interactiveDismissDisabled(!prefsRepo.conTypeSet)
-            }
+            .sheet(isPresented: $showOnboarding) {
+                OnboardingView(viewModel: viewModel) {
+                    Task {
+                        showOnboarding = false
+                        viewModel.updateConFilterSet()
+                        await viewModel.syncData()
+                    }
+                }
+                .interactiveDismissDisabled()
+        }
     }
     
     @ViewBuilder
@@ -47,9 +44,7 @@ struct MainView: View {
             case .error(let msg):
                 ErrorState(message: msg) {
                     Task {
-                        if prefsRepo.conTypeSet {
-                            await viewModel.syncData()
-                        }
+                        await viewModel.syncData()
                     }
                 }
                 
@@ -83,7 +78,7 @@ struct MainView: View {
                         }
                         .tag(Tabbed.about)
                     
-                    SettingsTab(viewModel: viewModel, isPresentedAsSheet: false)
+                    SettingsTab(viewModel: viewModel)
                         .tabItem {
                             Image(systemName: "gear")
                             Text("Settings")
