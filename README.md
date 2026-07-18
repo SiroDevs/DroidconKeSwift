@@ -34,4 +34,4 @@ step-by-step instructions.
 | 3 | `chapter-3` | Integrate the two: copy the compiled `.so` files and generated bindings into the Android app's `jniLibs/`, load the library, and call Swift logic from Compose. |
 
 More chapters will be added as the app grows past "Hello World" into real
-Droidconke features.
+Droidconke features. Contributions are welcome also.
