@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "DroidconKe",
+    name: "DroidconKeSwift",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "DroidconKe",
-            targets: ["DroidconKe"]
+            name: "DroidconKeSwift",
+            targets: ["DroidconKeSwift"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DroidconKe"
+            name: "DroidconKeSwift"
         ),
         .testTarget(
-            name: "DroidconKeTests",
-            dependencies: ["DroidconKe"]
+            name: "DroidconKeSwiftTests",
+            dependencies: ["DroidconKeSwift"]
         ),
     ],
     swiftLanguageModes: [.v6]
