@@ -26,17 +26,6 @@ before any native Swift code is introduced.
    ```
 3. Run on both an x86_64 emulator and (if available) an arm64 device.
    Confirm the app builds and launches cleanly before touching native code.
-4. Add the empty `jniLibs/arm64-v8a` and `jniLibs/x86_64` folders now, and
-   confirm Gradle picks them up:
-   ```kotlin
-   android {
-       sourceSets {
-           getByName("main") {
-               jniLibs.srcDirs("src/main/jniLibs")
-           }
-       }
-   }
-   ```
 
 ---
 

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/x86_64-apple-macosx/debug/DroidconKeSwiftPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/x86_64-apple-macosx/debug/DroidconKeSwiftPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/x86_64-apple-macosx/debug/DroidconKeSwiftPackageTests.build/runner.d",
+    "object": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/x86_64-apple-macosx/debug/DroidconKeSwiftPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/x86_64-apple-macosx/debug/DroidconKeSwiftPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/x86_64-apple-macosx/debug/DroidconKeSwiftPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/x86_64-apple-macosx/debug/DroidconKeSwiftPackageTests.build/runner.dia"
+  }
+}

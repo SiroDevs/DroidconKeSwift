@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.d",
+    "object": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.o",
+    "swift-dependencies": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/primary.swiftdeps"
+  },
+  "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Tests/DroidconKeSwiftTests/DroidconKeSwiftTests.swift": {
+    "object": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.swift.o",
+    "swiftmodule": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.swiftdeps",
+    "diagnostics": "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.dia"
+  }
+}

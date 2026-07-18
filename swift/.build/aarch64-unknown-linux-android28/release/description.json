@@ -1,0 +1,809 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.xctest",
+      "packagePath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift",
+      "productName" : "DroidconKeSwiftPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "DroidconKeSwiftPackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.DroidconKeSwift-aarch64-unknown-linux-android28-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/sources",
+      "importPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Sources/DroidconKeSwift/DroidconKeSwift.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "DroidconKeSwift",
+      "moduleOutputPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwift.swiftmodule",
+      "objects" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/DroidconKeSwift.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "aarch64-unknown-linux-android28",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+        "-static-stdlib",
+        "-resource-dir",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/include/DroidconKeSwift-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xclang-linker",
+        "-fuse-ld=lld",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-g",
+        "-Xcc",
+        "--sysroot",
+        "-Xcc",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swift",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/DroidconKeSwift.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwift.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Sources/DroidconKeSwift/DroidconKeSwift.swift"
+      ],
+      "tempsPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.DroidconKeSwiftPackageDiscoveredTests-aarch64-unknown-linux-android28-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/sources",
+      "importPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/DroidconKeSwiftTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "DroidconKeSwiftPackageDiscoveredTests",
+      "moduleOutputPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftPackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/DroidconKeSwiftTests.swift.o",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "aarch64-unknown-linux-android28",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+        "-static-stdlib",
+        "-resource-dir",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/include/DroidconKeSwiftPackageDiscoveredTests-Swift.h",
+        "-color-diagnostics",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xclang-linker",
+        "-fuse-ld=lld",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-g",
+        "-Xcc",
+        "--sysroot",
+        "-Xcc",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swift",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/DroidconKeSwiftTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/DroidconKeSwiftTests.swift",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/all-discovered-tests.swift"
+      ],
+      "tempsPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.DroidconKeSwiftPackageTests-aarch64-unknown-linux-android28-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/sources",
+      "importPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftPackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "DroidconKeSwiftPackageTests",
+      "moduleOutputPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "aarch64-unknown-linux-android28",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+        "-static-stdlib",
+        "-resource-dir",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/include/DroidconKeSwiftPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xclang-linker",
+        "-fuse-ld=lld",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-g",
+        "-Xcc",
+        "--sysroot",
+        "-Xcc",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swift",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.DroidconKeSwiftTests-aarch64-unknown-linux-android28-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/sources",
+      "importPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Tests/DroidconKeSwiftTests/DroidconKeSwiftTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwift.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "DroidconKeSwiftTests",
+      "moduleOutputPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftTests.swiftmodule",
+      "objects" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "aarch64-unknown-linux-android28",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/index/store",
+        "-O",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+        "-static-stdlib",
+        "-resource-dir",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xclang-linker",
+        "-fuse-ld=lld",
+        "-sdk",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-g",
+        "-Xcc",
+        "--sysroot",
+        "-Xcc",
+        "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swift",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Tests/DroidconKeSwiftTests/DroidconKeSwiftTests.swift"
+      ],
+      "tempsPath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "DroidconKeSwift" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "DroidconKeSwift",
+      "-package-name",
+      "swift",
+      "-c",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Sources/DroidconKeSwift/DroidconKeSwift.swift",
+      "-I",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "-target",
+      "aarch64-unknown-linux-android28",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+      "-static-stdlib",
+      "-resource-dir",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/include/DroidconKeSwift-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xclang-linker",
+      "-fuse-ld=lld",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-g",
+      "-Xcc",
+      "--sysroot",
+      "-Xcc",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swift",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "DroidconKeSwiftPackageDiscoveredTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "DroidconKeSwiftPackageDiscoveredTests",
+      "-package-name",
+      "swift",
+      "-c",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/DroidconKeSwiftTests.swift",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/all-discovered-tests.swift",
+      "-I",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "-target",
+      "aarch64-unknown-linux-android28",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+      "-static-stdlib",
+      "-resource-dir",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/include/DroidconKeSwiftPackageDiscoveredTests-Swift.h",
+      "-color-diagnostics",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xclang-linker",
+      "-fuse-ld=lld",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-g",
+      "-Xcc",
+      "--sysroot",
+      "-Xcc",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swift",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "DroidconKeSwiftPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "DroidconKeSwiftPackageTests",
+      "-package-name",
+      "swift",
+      "-c",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "-target",
+      "aarch64-unknown-linux-android28",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+      "-static-stdlib",
+      "-resource-dir",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/include/DroidconKeSwiftPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xclang-linker",
+      "-fuse-ld=lld",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-g",
+      "-Xcc",
+      "--sysroot",
+      "-Xcc",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swift",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "DroidconKeSwiftTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "DroidconKeSwiftTests",
+      "-package-name",
+      "swift",
+      "-c",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Tests/DroidconKeSwiftTests/DroidconKeSwiftTests.swift",
+      "-I",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules",
+      "-target",
+      "aarch64-unknown-linux-android28",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/index/store",
+      "-O",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/ModuleCache",
+      "-static-stdlib",
+      "-resource-dir",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/swift-resources/usr/lib/swift_static-aarch64",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xclang-linker",
+      "-fuse-ld=lld",
+      "-sdk",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-g",
+      "-Xcc",
+      "--sysroot",
+      "-Xcc",
+      "/Users/sirodaves/Library/org.swift.swiftpm/swift-sdks/swift-6.3.2-RELEASE_android.artifactbundle/swift-android/ndk-sysroot",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swift",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "DroidconKeSwift" : [
+
+    ],
+    "DroidconKeSwiftPackageDiscoveredTests" : [
+      "DroidconKeSwiftTests",
+      "DroidconKeSwift"
+    ],
+    "DroidconKeSwiftPackageTests" : [
+      "DroidconKeSwiftPackageDiscoveredTests",
+      "DroidconKeSwiftTests",
+      "DroidconKeSwift"
+    ],
+    "DroidconKeSwiftTests" : [
+      "DroidconKeSwift"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/DroidconKeSwiftTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/Modules/DroidconKeSwiftPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Sources/DroidconKeSwift/DroidconKeSwift.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/sources"
+    },
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/DroidconKeSwiftTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/sources"
+    },
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/sources"
+    },
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.build/DroidconKeSwift.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/DroidconKeSwiftTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/DroidconKeSwiftTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/Tests/DroidconKeSwiftTests/DroidconKeSwiftTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwiftTests.build/sources"
+    },
+    "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/sirodaves/Developer/Android/Swift/DroidconKeSwift/swift/.build/aarch64-unknown-linux-android28/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
