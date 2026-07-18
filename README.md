@@ -26,10 +26,10 @@ wiring the compiled Swift logic into the Compose UI via JNI.
 2. Copy the compiled `.so` files from the Swift package build output into
    the matching `jniLibs/<abi>/` folder:
    ```bash
-   cp swift/swift/.build/aarch64-unknown-linux-android28/release/libDroidconKe.so \
+   cp swift/swift/.build/aarch64-unknown-linux-android28/release/DroidconKeSwift.so \
       app/src/main/jniLibs/arm64-v8a/
 
-   cp swift/swift/.build/x86_64-unknown-linux-android28/release/libDroidconKe.so \
+   cp swift/swift/.build/x86_64-unknown-linux-android28/release/DroidconKeSwift.so \
       app/src/main/jniLibs/x86_64/
    ```
 3. Copy `libc++_shared.so` from the NDK into the same folders (unless the
@@ -45,7 +45,7 @@ wiring the compiled Swift logic into the Compose UI via JNI.
    placeholder:
    ```kotlin
    companion object {
-       init { System.loadLibrary("DroidconKe") }
+       init { System.loadLibrary("DroidconKeSwift") }
    }
    ```
    val greeting = remember { Greetings().greet("Android") }
