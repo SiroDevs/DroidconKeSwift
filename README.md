@@ -5,28 +5,14 @@ Swift Android SDK and `swift-java` for JNI/Android interop.
 
 ---
 
-# Chapter 1: Android App Scaffold
+# Chapter 3: Integrating Android app and the Swift Package
 
-A standard Android app (Kotlin + Jetpack Compose), validated end to end
-before any native Swift code is introduced.
-
-## Requirements
-
-- Android Studio (latest stable)
-- Min SDK: **28** (required by the Swift Android SDK target)
-- Kotlin, Jetpack Compose (default Empty Activity template)
-- A device or emulator for `arm64-v8a` and/or `x86_64`
+Merges the Chapter 1 Android app scaffold with the Chapter 2 Swift package,
+wiring the compiled Swift logic into the Compose UI via JNI.
 
 ## Steps
 
-1. New Project → **Empty Activity (Compose)**, min SDK 28.
-2. In `MainActivity.kt`, render a placeholder string in Compose:
-   ```kotlin
-   Text(text = "Hello, world!")
-   ```
-3. Run on both an x86_64 emulator and (if available) an arm64 device.
-   Confirm the app builds and launches cleanly before touching native code.
-4. Add the empty `jniLibs/arm64-v8a` and `jniLibs/x86_64` folders now, and
+1. Add the empty `jniLibs/arm64-v8a` and `jniLibs/x86_64` folders now, and
    confirm Gradle picks them up:
    ```kotlin
    android {
@@ -37,12 +23,54 @@ before any native Swift code is introduced.
        }
    }
    ```
+2. Copy the compiled `.so` files from the Swift package build output into
+   the matching `jniLibs/<abi>/` folder:
+   ```bash
+   cp swift/swift/.build/aarch64-unknown-linux-android28/release/libDroidconKe.so \
+      app/src/main/jniLibs/arm64-v8a/
 
----
+   cp swift/swift/.build/x86_64-unknown-linux-android28/release/libDroidconKe.so \
+      app/src/main/jniLibs/x86_64/
+   ```
+3. Copy `libc++_shared.so` from the NDK into the same folders (unless the
+   Swift build was fully statically linked):
+   ```bash
+   cp $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/*/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so \
+      app/src/main/jniLibs/arm64-v8a/
+   ```
+4. Copy the generated JNI binding file (e.g. `Greetings.kt`) from
+   `swift/swift/generated-bindings/` into `app/src/main/java/...`,
+   matching its package declaration.
+5. Load the library and call it from Compose, replacing the Chapter 1
+   placeholder:
+   ```kotlin
+   companion object {
+       init { System.loadLibrary("DroidconKe") }
+   }
+   ```
+   val greeting = remember { Greetings().greet("Android") }
+   Text(text = greeting)
+   ```
+6. Rebuild and run:
+   ```bash
+   ./gradlew assembleDebug
+   adb install -r app/build/outputs/apk/debug/app-debug.apk
+   ```
+
+Expected result: **"Hello, Android from Swift!"** rendered in the same
+Compose UI slot that showed the placeholder in Phase 1.
+
+## Troubleshooting
+
+| Symptom | Likely cause |
+|---|---|
+| `UnsatisfiedLinkError` at runtime | Missing `.so` for that device's ABI, or `libc++_shared.so` not bundled |
+| Crash only on emulator | Emulator is x86_64 but only the arm64 `.so` was built/copied |
+| Symbol mismatch / crash on call | Binding file generated from a different Swift source version than the `.so` — rebuild both together |
 
 ## Notes
 
-- The UI layer is **always Kotlin/Compose** — SwiftUI does not run on
-  Android. This branch has no native code at all yet; that's intentional.
-- Next branch: `chapter-2` (Swift package, no Android
-  dependency).
+- The UI layer is still entirely Kotlin/Compose. Swift owns the logic
+  called through JNI only — SwiftUI is never involved.
+- If the Swift API changes, rebuild both the `.so` and the JNI bindings
+  together on `chapter-2` before re-copying them here.
